@@ -1,0 +1,22 @@
+import "package:flutter/material.dart";
+import "pages/login_page.dart";
+
+void main() => runApp(const MyApp());
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: "Animals App",
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        scaffoldBackgroundColor: const Color(0xFFFDF7FF),
+        useMaterial3: true,
+      ),
+      home: const LoginPage(),
+    );
+  }
+}
